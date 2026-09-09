@@ -28,6 +28,7 @@ select
 from orders
 where order_status in ({{ "'" ~ get_valid_order_statuses() | join("', '") ~ "'" }})
 
+
 {% if is_incremental() %}
     and order_date > (select coalesce(max(order_date), '1900-01-01') from {{ this }})
 {% endif %}
