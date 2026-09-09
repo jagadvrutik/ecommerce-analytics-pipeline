@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "One row per order line item, cleaned and typed from the raw API payload."
+    columns:
+      - name: order_id
+        description: "Primary key. Unique identifier for each order."
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: "Foreign key to stg_customers. May reference customers not present in our seed data."
+        tests:
+          - not_null
+
+      - name: product_id
+        description: "Foreign key to stg_products. May reference products not present in our seed data."
+        tests:
+          - not_null
+
+      - name: order_status
+        description: "Current status of the order."
+        tests:
+          - accepted_values:
+              arguments:
+                values: "{{ get_valid_order_statuses() }}"
+                
+
+  - name: stg_customers
+    description: "One row per customer, from the customers_seed reference data."
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_products
+    description: "One row per product, from the products_seed reference data."
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null

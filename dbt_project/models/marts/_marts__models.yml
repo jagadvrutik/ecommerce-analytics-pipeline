@@ -1,0 +1,63 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "One row per customer (full population from customers_seed), enriched with lifetime order statistics. Customers with zero orders show 0 for total_orders/lifetime_spend, null for average/date fields."
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_products
+    description: "One row per product (full population from products_seed), enriched with sales statistics."
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_orders
+    description: "Grain: one row per order. Core fact table joining order transactions with cost/margin data.
+                  customer_id/product_id may reference records outside the seed sample — see relationships test config for accepted threshold."
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: customer_id
+                config:
+                severity: warn
+                error_if: ">10000"
+
+      - name: product_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_products')
+                field: product_id
+                config:
+                severity: warn
+                error_if: ">10000"
+
+  - name: mart_customer_summary
+    description: "One row per customer, with lifecycle segmentation (Active/At Risk/Churned/Never Purchased) for retention analysis."
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: mart_daily_sales
+    description: "One row per calendar day, aggregated revenue/cost/margin/order metrics."
+    columns:
+      - name: order_day
+        tests:
+          - unique
+          - not_null

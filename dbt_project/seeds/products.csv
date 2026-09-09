@@ -1,0 +1,51 @@
+product_id,product_name,category,brand,unit_cost
+1,Wireless Mouse,Electronics,TechPro,8.5
+2,Cotton T-Shirt,Clothing,UrbanWear,4.2
+3,Stainless Steel Bottle,Home & Kitchen,HydroLife,3.75
+4,Yoga Mat,Sports & Outdoors,FlexFit,6.0
+5,Face Moisturizer,Beauty,GlowSkin,5.1
+6,Denim Jeans,Clothing,UrbanWear,15.74
+14,Skipping Rope,Sports & Outdoors,FlexFit,3.79
+32,Running Jacket,Clothing,FlexFit,18.6
+33,Hoodie,Clothing,UrbanWear,15.33
+34,Gym Gloves,Sports & Outdoors,FlexFit,6.64
+52,Remote Control Car,Toys,FunKids,15.18
+61,Wireless Earbuds,Electronics,SoundMax,27.54
+75,Business Strategy,Books,ReadWell,7.75
+86,Denim Jeans,Clothing,UrbanWear,14.43
+98,Personal Finance,Books,SmartReads,6.76
+100,Dark Chocolate,Grocery,SweetBite,2.61
+113,Running Jacket,Clothing,FlexFit,18.01
+125,Gym Gloves,Sports & Outdoors,FlexFit,5.73
+133,Face Cleanser,Beauty,GlowSkin,5.01
+137,Puzzle Set,Toys,BrainPlay,5.32
+149,Non-Stick Pan,Home & Kitchen,ChefPro,14.83
+158,Running Jacket,Clothing,FlexFit,19.59
+176,Skipping Rope,Sports & Outdoors,FlexFit,3.55
+185,Gym Gloves,Sports & Outdoors,FlexFit,6.13
+187,Camping Lantern,Sports & Outdoors,OutdoorPro,10.9
+198,Puzzle Set,Toys,BrainPlay,4.81
+209,Gym Gloves,Sports & Outdoors,FlexFit,6.41
+224,Non-Stick Pan,Home & Kitchen,ChefPro,14.02
+242,Hair Serum,Beauty,PureCare,6.8
+255,Data Analytics Guide,Books,LearnPress,10.34
+260,Organic Rice,Grocery,FreshFarm,4.9
+264,Table Lamp,Home & Kitchen,BrightHome,9.87
+278,Sports Shorts,Clothing,FlexFit,7.47
+293,Lip Balm,Beauty,GlowSkin,2.45
+294,Sneakers,Clothing,StepUp,26.91
+303,Python Programming,Books,LearnPress,7.3
+309,Organic Rice,Grocery,FreshFarm,5.12
+318,Electric Kettle,Home & Kitchen,HomeEase,21.43
+328,Skipping Rope,Sports & Outdoors,FlexFit,3.48
+334,Power Bank,Electronics,VoltEdge,16.19
+335,Casual Shirt,Clothing,StyleHub,10.36
+345,Dumbbell Set,Sports & Outdoors,FlexFit,19.2
+348,Sneakers,Clothing,StepUp,24.52
+351,Kitchen Knife Set,Home & Kitchen,ChefPro,12.25
+369,Non-Stick Pan,Home & Kitchen,ChefPro,15.48
+383,Tennis Balls,Sports & Outdoors,SportMax,5.44
+390,Body Lotion,Beauty,PureCare,5.51
+402,Dark Chocolate,Grocery,SweetBite,2.84
+410,Dumbbell Set,Sports & Outdoors,FlexFit,19.69
+428,Tennis Balls,Sports & Outdoors,SportMax,4.78
