@@ -3,13 +3,13 @@ customer_id,customer_name,email,region,segment,signup_date
 4844,Rohan Reddy,rohan.reddy4844@example.com,North,Premium,2024-04-24
 3393,Isha Sharma,isha.sharma3393@example.com,North,Premium,2022-03-24
 3495,Rahul Desai,rahul.desai3495@example.com,North,Premium,2025-01-06
-4977,Sneha Verma,sneha.verma4977@example.com,South,Standard,2024-04-21
+4977,Sneha Verma,sneha.verma4977@example.com,South,Premium,2024-04-21
 4325,Karan Nair,karan.nair4325@example.com,North,Premium,2024-11-30
 4486,Isha Shah,isha.shah4486@example.com,East,Premium,2022-03-17
 2303,Ananya Patel,ananya.patel2303@example.com,North,Standard,2021-07-18
 276,Priya Iyer,priya.iyer276@example.com,East,Standard,2025-07-11
 790,Vivaan Reddy,vivaan.reddy790@example.com,West,Premium,2023-02-15
-4755,Aditya Desai,aditya.desai4755@example.com,East,Standard,2024-03-28
+4755,Aditya Desai,aditya.desai4755@example.com,East,Premium,2024-03-28
 1468,Vikram Reddy,vikram.reddy1468@example.com,North,Premium,2024-09-16
 1800,Rahul Nair,rahul.nair1800@example.com,East,Premium,2025-10-18
 3915,Rahul Iyer,rahul.iyer3915@example.com,North,Standard,2022-07-24
@@ -18,7 +18,7 @@ customer_id,customer_name,email,region,segment,signup_date
 4778,Kabir Desai,kabir.desai4778@example.com,South,Premium,2023-08-05
 3105,Diya Singh,diya.singh3105@example.com,South,Standard,2025-09-23
 4123,Vivaan Gupta,vivaan.gupta4123@example.com,North,Standard,2023-04-02
-654,Karan Patel,karan.patel654@example.com,South,Standard,2022-03-12
+654,Karan Patel,karan.patel654@example.com,South,Premium,2022-03-12
 3406,Aditi Verma,aditi.verma3406@example.com,West,Premium,2022-06-27
 346,Rohan Gupta,rohan.gupta346@example.com,East,Standard,2024-04-10
 3348,Diya Shah,diya.shah3348@example.com,South,Premium,2023-11-10

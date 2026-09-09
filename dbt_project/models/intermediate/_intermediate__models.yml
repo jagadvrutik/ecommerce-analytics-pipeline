@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: int_orders_enriched
+    description: "Order lines joined with product cost data. One row per order line, grain matches stg_orders. unit_cost/total_cost/margin_pct are null for orders referencing products outside our seed sample."
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: margin_pct
+        description: "Profit margin as a percentage. Null when cost data is unavailable, never a divide-by-zero error."
